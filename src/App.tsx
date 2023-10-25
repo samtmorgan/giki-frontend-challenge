@@ -1,22 +1,22 @@
 import React from 'react';
-// import logo from "./logo.svg";
 import './App.css';
-
-import { Footprint } from './components/Footprint';
+import { Content } from './components/Content';
 
 const data = {
   emissions: 7565,
   yearTarget: 5855,
   remainderToCut: 409,
-  '2030Target': 2500,
-  unit: 'kg',
+  twenty30Target: 2500,
 };
 
 function App() {
   return (
-    <div className="App">
-      <Footprint unit={data.unit} emissions={data.emissions} />
-    </div>
+    <Content
+      twenty30Target={data.twenty30Target}
+      emissions={data.emissions}
+      yearTarget={data.yearTarget}
+      remainderToCut={data.remainderToCut}
+    />
   );
 }
 
