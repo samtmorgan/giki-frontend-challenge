@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/giki-frontend-challenge/static/css/main.0e7784cd.css",
+    "main.js": "/giki-frontend-challenge/static/js/main.fec2d699.js",
+    "static/js/787.c50427a1.chunk.js": "/giki-frontend-challenge/static/js/787.c50427a1.chunk.js",
+    "static/media/purple_cloud.png": "/giki-frontend-challenge/static/media/purple_cloud.2c73a5ca97e1a2cc9e7d.png",
+    "static/media/white_cloud.png": "/giki-frontend-challenge/static/media/white_cloud.ca49306b9a1673d08092.png",
+    "index.html": "/giki-frontend-challenge/index.html",
+    "main.0e7784cd.css.map": "/giki-frontend-challenge/static/css/main.0e7784cd.css.map",
+    "main.fec2d699.js.map": "/giki-frontend-challenge/static/js/main.fec2d699.js.map",
+    "787.c50427a1.chunk.js.map": "/giki-frontend-challenge/static/js/787.c50427a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e7784cd.css",
+    "static/js/main.fec2d699.js"
+  ]
+}
