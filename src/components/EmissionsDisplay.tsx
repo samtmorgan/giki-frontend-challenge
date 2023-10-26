@@ -4,7 +4,7 @@ import { Emissions } from '../types/types';
 import styled from 'styled-components';
 import { formatNumber } from '../utils/utils';
 
-const Title = styled.h1.attrs<{ $fontSize: string }>(props => ({
+const Title = styled.span.attrs<{ $fontSize: string }>(props => ({
   $fontSize: props.$fontSize || '18px',
 }))`
   font-size: ${props => props.$fontSize};
@@ -48,13 +48,13 @@ export function EmissionsDisplay({ emissions, title, size = 'lg' }: Emissions) {
   const emissionsString = useMemo(() => formatNumber(emissions), [emissions]);
 
   return (
-    <div className="emissions-component-container">
+    <article className="emissions-component-container">
       <Title $fontSize={fontSize.title}>{title}</Title>
       <Number $fontSize={fontSize.number}>
         {emissionsString}
         <Unit $fontSize={fontSize.unit}>kg</Unit>
       </Number>
       <Footer $fontSize={fontSize.footer}>of carbon emissions</Footer>
-    </div>
+    </article>
   );
 }

@@ -8,10 +8,10 @@ export function Content({ emissions, yearTarget, remainderToCut, twenty30Target 
   return (
     <div className="content">
       <Footprint emissions={emissions} />
-      <div className="goals-container">
+      <section className="goals-container">
         <EmissionsDisplay emissions={yearTarget} title={`End of\nyear target`} size="sm" />
         <EmissionsDisplay emissions={remainderToCut} title={`Left to cut\nthis year`} size="sm" />
-      </div>
+      </section>
       <TargetChip twenty30Target={twenty30Target} />
     </div>
   );
