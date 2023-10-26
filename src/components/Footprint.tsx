@@ -7,7 +7,7 @@ import '../App.css';
 import { Button } from './Button';
 
 /**
- * Butterfly positioning is handled by CSS class
+ * Butterfly positioning by CSS
  */
 function Butterfly() {
   return (
@@ -104,7 +104,7 @@ function Leaves({ x, y, a = 0 }: Coords) {
 
 export function Footprint({ emissions }: FootprintType): ReactElement {
   return (
-    <div className="footprint">
+    <section className="footprint">
       <img className="purple-cloud" src={purpleCloud} alt="Purple cloud"></img>
       <img className="white-cloud" src={whiteCloud} alt="White cloud" />
       <Butterfly />
@@ -116,6 +116,6 @@ export function Footprint({ emissions }: FootprintType): ReactElement {
         <EmissionsDisplay emissions={emissions} title="Your footprint" size="lg" />
         <Button />
       </div>
-    </div>
+    </section>
   );
 }
