@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import './App.css';
 import { Content } from './components/Content';
 
@@ -9,7 +9,7 @@ const data = {
   twenty30Target: 2500,
 };
 
-function App() {
+function App(): ReactElement {
   return (
     <Content
       twenty30Target={data.twenty30Target}

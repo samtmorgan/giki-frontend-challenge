@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { ReactElement, useMemo } from 'react';
 import '../App.css';
 import { Emissions } from '../types/types';
 import styled from 'styled-components';
@@ -33,7 +33,7 @@ const Footer = styled.span.attrs<{ $fontSize: string }>(props => ({
   font-size: ${props => props.$fontSize};
 `;
 
-export function EmissionsDisplay({ emissions, title, size = 'lg' }: Emissions) {
+export function EmissionsDisplay({ emissions, title, size = 'lg' }: Emissions): ReactElement {
   const fontSize = useMemo(() => {
     const sizes = { title: '', number: '', unit: '', footer: '' };
     if (size === 'sm') {
